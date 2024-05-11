@@ -26,7 +26,11 @@ jobs:
 
   test-go-mongo-2:
     needs: build
-    uses: ./.github/workflows/test-go-mongo-2.yml    
+    uses: ./.github/workflows/test-go-mongo-2.yml
+
+  test-go-echo-sql:
+    needs: build
+    uses: ./.github/workflows/test-go-echo-sql.yml    
 
 
 # Wait for all the test workflows before getting the coverage
